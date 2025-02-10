@@ -29,7 +29,7 @@ const LoginScreen = () => {
         console.log("Login successful:", data);
 
         dispatch(setUser(data.user));
-        navigation.navigate("Profile");
+        navigation.navigate("AuthenticatedTabs"); // Navigate to tabs
       } else {
         console.error("Login failed");
       }

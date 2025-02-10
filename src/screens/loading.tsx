@@ -13,7 +13,7 @@ const LoadingScreen = () => {
     // Add a small delay to show the loading animation
     const timer = setTimeout(() => {
       if (user.name) {
-        navigation.navigate("Profile");
+        navigation.navigate("AuthenticatedTabs");
       } else {
         navigation.navigate("Landing");
       }
